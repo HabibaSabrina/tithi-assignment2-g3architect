@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@700&family=Work+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+/* Styling the header portion */
+.header{
+    background-color:  rgba(255, 144, 14, 0.1);
+    
+}
+.navigation-bar{
+    
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 128px;
+    padding-right: 140px;
+    
+    
+}
+.header-title{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+.nav-bar{
+    margin-top: 15px;
+}
+.nav-bar a{
+    text-decoration: none;
+    margin-left: 34px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #424242;
+}
+/* styling banner of the header portion */
+.banner, .banner-details{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.banner-details{
+    text-align: center;
+    margin:50px 300px;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 64px;
+    color: #131313;
+}
+.banner-info{
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 32px;
+    line-height: 1.5em;
+}
+.primary-button{
+    width: 180px;
+    height: 64px;
+    background-color: #FF900E;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+.banner img{
+    width: 1200px;
+    margin-bottom: 45px;
+}
+/* Styling list of features section */
+.list-of-features{
+    display: flex;
+    gap: 76px;
+    margin: 85px 115px;
+}
+.list-of-features-images{
+    height: 700px;
+    width: 700px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+.feature-list-title{
+    margin-top: 200px;
+    font-weight: 500;
+    font-size: 45px;
+}
+.feature-list-para{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    line-height: 1.5em;
+}
+/* Styling Love and enjoy feature */
+.love-enjoy-features{
+    display: flex;
+    gap: 120px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 150px;
+}
+.love-enjoy-feature-lists{
+    width: 500px;
+    height: 982px;
+}
+.love-enjoy-feature-title h3{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-left: 5px;
+    margin-right: 50px;
+}
+.love-enjoy-feature-title{
+    border-left: 5px solid #FF900E;
+}
+.love-enjoy-feature-para{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-top: 24px;
+    margin-bottom: 30px;
+    line-height: 1.5em;
+    
+}
+/* passages of the love and enjoy */
+.passage{
+    /* height: 171px; */
+    width: 500px;
+    padding: 30px;
+    box-shadow: 0px 6px 22px rgba(222, 220, 220, 0.542);
+    margin-bottom: 20px;
+}
+.passage-title{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #131313;
+}
+.passage-para{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    line-height: 1.5em;
+    
+}
+/* love and enjoy image side  */
+.love-enjoy-feature-image-btn{
+  
+    width: 800px;
+    height: 1059px;
+}
+.love-enjoy-feature-image{
+   
+    margin-left: 92px;
+}
+.love-enjoy-feature-image img{
+    width: 600px;
+    height: 910px;
+   
+}
+.love-enjoy-feature-btn{
+    width: 342px;
+    height: 200px;
+    border: none;
+    color: #FFFFFF;
+    background: #FF900E;
+    border-radius: 8px;
+    padding: 45px 42px;
+    position: relative;
+    top: -135px;
+}
+/* Styling some facts sections */
+.some-facts{
+    margin: 40px 115px;
+}
+.some-facts-title{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-bottom: 24px;
+}
+.some-facts-pera{
+    width: 542px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #727272;
+    margin-bottom: 80px;
+    
+}
+/* styling facts */
+.some-facts-things{
+    display: flex;
+    gap: 80px;
+    margin: 50px;
+}
+.fact{
+    height: 240px;
+    width: 240px;
+    /* padding: 20px 20px; */
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+   
+}
+.fact-thing{
+    margin: 50px 30px;
+    text-align: center;
+}
+.fact-title{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 45px;
+    color: #424242;
+    
+}
+.fact-info{
+    font-weight: 600;
+    font-size: 20px;
+    color: #727272;
+}
+/* Styling footer sponsor section */
+.sponsor-details{
+    text-align: center;
+    width: 542px;
+    margin-left: 500px;
+}
+.sponsor-title{
+    font-weight: 700;
+    font-size: 45px;
+    margin-top: 100px;
+    color: #131313;
+    margin-bottom: 20px;
+    
+}
+.sponsor-para{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #727272;
+}
+.sponsor-icon{
+    display: flex;
+    gap: 100px;
+    margin: 50px 150px;
+}
+.icon img{
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+}
+/* styling the copyright section */
+.copyright{
+    background-color: #FFF4E7;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #424242;
+    text-align: center;
+    margin: 100px 150px;
+    padding-top: 39px;
+    padding-bottom: 39px;
+
+}
+/* --------------------------------Animation Portion styling-------------------------------------- 
+--------------------------------------------------------------------------------------------------*/
+/* award box portion animation */
+.award{
+    transition: width 5s ease 1s, height 5s, transform 2s ;
+}
+.award:hover{
+    transform: rotate(180deg);
+}
+/* project box portion animation */
+.project:hover{
+    animation: change 5s infinite;
+}
+@keyframes change {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: rgb(255, 196, 0);
+    }
+  }
+/* Customer box animation*/
+.customer img{
+    transition: width 5s ease 1s, height 5s, transform 2s ;;
+}
+.customer img:hover{
+    position:relative;
+    width: 90px;
+    height: 90px;
+    transform: rotate(360deg);
+}
