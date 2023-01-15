@@ -259,6 +259,63 @@
         -webkit-filter: grayscale(100%);
         filter: grayscale(100%);
 }
+/* Styling architecture concept section */
+
+.architecture-concept-detail{
+    text-align: center;
+    /* width: 542px; */
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.architecture-concept-title{
+    font-weight: 700;
+    font-size: 45px;
+    margin-top: 100px;
+    color: #131313;
+    margin-bottom: 20px;
+    
+}
+.architecture-concept-para{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #727272;
+}
+/* styling cocepts */
+.concepts{
+    margin: 60px 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+.concept{
+    background-color: white;
+    width: 400px;
+    height: 450px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 30px #ffe3eb;
+}
+.concept-banner img{
+    height: 300px;
+    width: 400px;
+}
+.concept-title{
+    font-weight: 600;
+    font-size: 28px;
+    color: #131313;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.concept-para{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #727272;
+
+}
+
 /* styling the copyright section */
 .copyright{
     background-color: #FFF4E7;
@@ -302,4 +359,95 @@
     width: 90px;
     height: 90px;
     transform: rotate(360deg);
+}
+
+/* -------------------------Styling for Mobile Device----------------
+--------------------------------------------------------------------------- */
+
+@media only screen and (max-width:576px) {
+    .sponsors{
+        display: none;
+    }
+    /* header portion in mobile screen */
+    .navigation-bar{
+    
+       flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10%;
+        
+        
+    }
+    .nav-bar {
+         margin-left: 0;
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-row-gap: 20%;
+    }
+    .banner-details {
+        margin: 5% 10%;
+    }
+    .banner img {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    /* list of feature section in mobile screen */
+    .list-of-features{
+        flex-direction: column;
+        margin: 10%;
+    }
+    .feature-list-details{
+        margin-top: 140%;
+    }
+    .list-of-features-images{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    /* Love and enjoy feature section in mobile screen */
+    .love-enjoy-features{
+        flex-direction: column;
+        width: 90%;
+        margin: 5%;
+    }
+    .love-enjoy-feature-lists {
+    width: 90%;
+    }
+    .passage {
+        width: 90%;
+        padding: 3%;
+    }
+    .love-enjoy-feature-image-btn{
+        width: 100%;
+        margin-top: 10%;
+    }
+    .love-enjoy-feature-image{
+        /* position: relative; */
+        margin-left: 1%;
+        margin-bottom: 10%;
+
+    }
+    .love-enjoy-feature-image img{
+       width: 90%;
+       height: 90%;
+    }
+    .love-enjoy-feature-btn{
+        top: 0;
+    }
+    /* some-facts on mobile screen */
+    .some-facts{
+        width: 90%;
+        margin: 5%;
+        margin-top: -80%;
+    }
+    .some-facts-pera{
+        width: 90%;
+    }
+    .some-facts-things{
+        flex-direction: column;
+    }
+
+    
 }
