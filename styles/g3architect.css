@@ -230,35 +230,7 @@
     font-size: 20px;
     color: #727272;
 }
-/* Styling footer sponsor section */
-.sponsor-details{
-    text-align: center;
-    width: 542px;
-    margin-left: 500px;
-}
-.sponsor-title{
-    font-weight: 700;
-    font-size: 45px;
-    margin-top: 100px;
-    color: #131313;
-    margin-bottom: 20px;
-    
-}
-.sponsor-para{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5em;
-    color: #727272;
-}
-.sponsor-icon{
-    display: flex;
-    gap: 100px;
-    margin: 50px 150px;
-}
-.icon img{
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-}
+
 /* Styling architecture concept section */
 
 .architecture-concept-detail{
@@ -281,7 +253,7 @@
     line-height: 1.5em;
     color: #727272;
 }
-/* styling cocepts */
+/* styling concepts */
 .concepts{
     margin: 60px 100px;
     display: grid;
@@ -316,6 +288,35 @@
 
 }
 
+/* Styling footer sponsor section */
+.sponsor-details{
+    text-align: center;
+    width: 542px;
+    margin-left: 500px;
+}
+.sponsor-title{
+    font-weight: 700;
+    font-size: 45px;
+    margin-top: 100px;
+    color: #131313;
+    margin-bottom: 20px;
+    
+}
+.sponsor-para{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #727272;
+}
+.sponsor-icon{
+    display: flex;
+    gap: 100px;
+    margin: 50px 150px;
+}
+.icon img{
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+}
 /* styling the copyright section */
 .copyright{
     background-color: #FFF4E7;
@@ -352,7 +353,7 @@
   }
 /* Customer box animation*/
 .customer img{
-    transition: width 5s ease 1s, height 5s, transform 2s ;;
+    transition: width 5s ease 1s, height 5s, transform 2s ;
 }
 .customer img:hover{
     position:relative;
@@ -360,14 +361,38 @@
     height: 90px;
     transform: rotate(360deg);
 }
+/* email portion animation */
+.email1 {
+    position: relative;
+    
+    
+}
+.email:hover .email1{
+    animation: email1change 3s infinite;
+}
+@keyframes email1change {
+    0%   {background-color:pink; left:0px; top:0px;}
+    25%  {background-color:mediumseagreen; left:100px; top:0px;}
+    50%  {background-color:blue; left:100px; top:100px;}
+    75%  {background-color:rebeccapurple; left:0px; top:100px;}
+    100% {background-color:pink; left:0px; top:0px;}
+  }
+.email:hover{
+    animation: emailchange 5s infinite;
+}
+@keyframes emailchange {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: rgb(0, 251, 255);
+    }
+  }
 
 /* -------------------------Styling for Mobile Device----------------
 --------------------------------------------------------------------------- */
 
 @media only screen and (max-width:576px) {
-    .sponsors{
-        display: none;
-    }
     /* header portion in mobile screen */
     .navigation-bar{
     
@@ -448,6 +473,67 @@
     .some-facts-things{
         flex-direction: column;
     }
+    /* Architecture concept in mobile screen */
+    .architecture-concept{
+        
+        width: 100%;
+       
+    }
+    .architecture-concept-detail{
+        text-align: left;
+        margin: 5%;
+        
+    }
+    .architecture-concept-title{
+
+        margin: 0;
+        margin-bottom: 5%;
+    }
+    .architecture-concept-para{
+        margin: 0;
+        margin-bottom: 10%;
+    }
+    .concepts{
+        margin: 0;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .concept {
+        margin-left: 5%;
+        width: 90%;
+        height: 100%;
+    }
+    .concept img{
+        width: 100%;
+    }
+    /* Footer in mobile screen */
+    .sponsors{
+        width: 100%;
+        
+    }
+    .sponsor-details{
+        margin: 0;
+        margin: 5%;
+        width: 90%;
+        text-align: left;
+    }
+    .sponsor-icon{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        gap: 5%;
+    }
+    .icon{
+        margin: 1%;
+    }
+    /* copyright in mobile */
+    .copyright{
+        margin: 0;
+    }
+
+    
 
     
 }
